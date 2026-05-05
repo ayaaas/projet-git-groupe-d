@@ -1,4 +1,4 @@
-# <img src="https://api.iconify.design/lucide:shopping-cart.svg?color=%233b82f6" width="30" height="30" valign="bottom" /> Projet GIT — Groupe D
+# Projet GIT — Groupe D
 > Système de gestion de catalogue produits avec génération de descriptions marketing par IA
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
@@ -10,13 +10,13 @@
 
 ---
 
-## <img src="https://api.iconify.design/lucide:target.svg?color=%233b82f6" width="24" height="24" valign="bottom" /> Problème résolu
+## Problème résolu
 
 Les TPE/PME qui ouvrent leur première boutique en ligne perdent en moyenne **3 à 5 heures par semaine** à rédiger manuellement leurs fiches produits. Notre solution automatise la génération de descriptions marketing à partir de simples mots-clés.
 
 ---
 
-## <img src="https://api.iconify.design/lucide:users.svg?color=%233b82f6" width="24" height="24" valign="bottom" /> Équipe — Groupe D
+## Équipe — Groupe D
 
 | Membre | Rôle |
 |--------|------|
@@ -27,7 +27,7 @@ Les TPE/PME qui ouvrent leur première boutique en ligne perdent en moyenne **3 
 
 ---
 
-## <img src="https://api.iconify.design/lucide:layout.svg?color=%233b82f6" width="24" height="24" valign="bottom" /> Architecture
+## Architecture
 
 ```mermaid
 flowchart TD
@@ -50,7 +50,7 @@ flowchart TD
 
 ---
 
-## <img src="https://api.iconify.design/lucide:settings.svg?color=%233b82f6" width="24" height="24" valign="bottom" /> Prérequis
+## Prérequis
 
 - Java 17+
 - Maven 3.9+
@@ -60,7 +60,7 @@ flowchart TD
 
 ---
 
-## <img src="https://api.iconify.design/lucide:rocket.svg?color=%233b82f6" width="24" height="24" valign="bottom" /> Installation & Lancement (Fedora 43)
+## Installation & Lancement (Fedora 43)
 
 ### 1. Cloner le projet
 
@@ -112,7 +112,7 @@ npm start
 
 ---
 
-## <img src="https://api.iconify.design/lucide:webhook.svg?color=%233b82f6" width="24" height="24" valign="bottom" /> Endpoints API
+## Endpoints API
 
 | Méthode | URL | Description |
 |---------|-----|-------------|
@@ -125,7 +125,7 @@ npm start
 
 ---
 
-## <img src="https://api.iconify.design/lucide:search-check.svg?color=%233b82f6" width="24" height="24" valign="bottom" /> Analyse de qualité (SonarQube)
+## Analyse de qualité (SonarQube)
 
 ```bash
 # Lancer l'analyse
@@ -137,7 +137,7 @@ mvn sonar:sonar -Dsonar.host.url=http://localhost:9000
 
 ---
 
-## <img src="https://api.iconify.design/lucide:git-branch.svg?color=%233b82f6" width="24" height="24" valign="bottom" /> Workflow Git
+## Workflow Git
 
 ```
 main ──────────────────────────────► [v1.0]
