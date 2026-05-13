@@ -5,6 +5,8 @@ import com.groupd.git_project.repository.ProductRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import com.groupd.git_project.service.tax.TaxCalculator;
+import com.groupd.git_project.service.tax.TaxStrategyFactory;
 
 import java.util.List;
 
@@ -17,6 +19,7 @@ import java.util.List;
 public class ProductService {
 
     private final ProductRepository productRepository;
+    private final TaxStrategyFactory taxStrategyFactory;
 
     /** Récupère tous les produits */
     public List<Product> findAll() {
@@ -58,5 +61,12 @@ public class ProductService {
         Product product = findById(id);
         product.setDescriptionIa(description);
         return productRepository.save(product);
+    }
+
+    public double getPrixTTC(Product product) {
+        TaxCalculator calculator = new TaxCalculator(
+                taxStrategyFactory.getStrategy(product.getCategorie())
+        );
+        return calculator.computeTTC(product.getPrix());
     }
 }
